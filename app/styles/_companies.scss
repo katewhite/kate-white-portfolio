@@ -1,0 +1,87 @@
+// TAPIGO
+.tapigo {
+	.row.mobile-screenshots {
+		text-align: center;
+		margin-top: 10px;
+		max-width: 1800px;
+    	margin: auto;
+    	.col-md-4 {
+    		padding-top: 30px;
+    		padding-bottom: 30px;
+    	}
+		img.screenshot {
+			width: 300px;
+		}
+		@media (max-width: $screen-sm) {
+			img.screenshot {
+				width: 240px;
+			}
+		}
+	}
+	.website-screenshots {
+		padding-left: 50px;
+		padding-right: 50px;
+		max-width: 1800px;
+    	margin: auto;
+		div {
+			padding: 50px;
+		}
+		img {
+			width: 100%;
+			-webkit-box-shadow: 0 0 50px rgba(0,0,0,.2);
+    		-moz-box-shadow: 0 0 50px rgba(0,0,0,.2);
+			box-shadow: 0 0 50px rgba(0,0,0,.8);
+		}
+		.desktop-screenshot {
+			img {
+				max-width: 920px;
+			}
+		}
+		@media (max-width: $screen-sm) {
+			.desktop-screenshot {
+				padding-left: 0px;
+			    padding-right: 0px;
+			}
+		}
+		.ipad-screenshot {
+			text-align: center;
+			img {
+				max-width: 320px;
+			}
+		}
+	}
+	.fullscreen-screenshot {
+		padding-left: 100px;
+	    padding-right: 100px;
+		img {
+			max-width: 1170px;
+		}
+	}
+	@media (max-width: $screen-sm) {
+		.fullscreen-screenshot {
+			padding-left: 50px;
+		    padding-right: 50px;
+		}
+	}
+}
+
+
+//ENIGAMI
+.enigami {
+	.fullscreen-screenshot {
+		img {
+			max-width: 720px;
+		}
+	}
+}
+
+
+//AVENTURA
+.aventura {
+	.measures {
+		max-width: 1000px;
+	}
+	.admin {
+		max-width: 1100px;
+	}
+}

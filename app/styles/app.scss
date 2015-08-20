@@ -1,0 +1,107 @@
+@import "variables";
+@import "companies";
+
+body {
+	font-family: 'museo-sans';
+	color: $black;
+	h1 {
+		font-size: 48px;
+	    font-family: museo-slab;
+	    font-weight: 300;
+	    text-align: center;
+	    margin-top: 60px;
+	}
+	h2 {
+		font-family: museo-slab;
+    	font-weight: 300;
+	}
+	h4 {
+		font-weight: 100;
+	}
+	.header {
+		.row {
+		    padding-top: 20px;
+		    padding-left: 60px;
+		    padding-right: 60px;
+		    padding-bottom: 40px;
+		    background-color: $green;
+			.name {
+				h4 {
+					margin-top: 3px;
+				}
+			}
+			.contact {
+				margin-top: 38px;
+				text-align: right;
+				h4 {
+					margin-bottom: 3px;
+					margin-top: 0px;
+					&:last-child {
+						margin-top: 7px;
+					}
+				}
+
+			}
+			@media (max-width: $screen-sm) {
+				.contact {
+					text-align: left;
+				}
+			}
+		}
+	}
+	@media (max-width: $screen-sm) {
+		.header {
+			.row {
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+		}
+	}
+	.divider-container {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	    padding-left: 20px;
+    	padding-right: 20px;
+		.divider {
+			height: 1px;
+			max-width: 650px;
+			background-color: lighten($black, 50);
+			margin: auto;		
+		}
+		.divider-ellipse {
+		    height: 7px;
+		    width: 7px;
+		    border: 1px solid lighten($black, 50);
+		    background-color: white;
+		    border-radius: 100%;
+		    margin: auto;
+		    margin-top: -4px;
+		}
+	}
+	.divider-container.title {
+		margin-top: 25px;
+		margin-bottom: 0px;
+	}
+	.company-header {
+		margin-top: 100px;
+	}
+	.company-description {
+		font-size: 18px;
+		font-weight: 100;
+		text-align: center;
+		padding: 40px;
+		padding-top: 50px;
+		max-width: 1220px;
+    	margin: auto;
+	}
+	.fullscreen-screenshot {
+		padding: 50px;
+		text-align: center;
+		img {
+			width: 100%;
+			-webkit-box-shadow: 0 0 50px rgba(0,0,0,.2);
+    		-moz-box-shadow: 0 0 50px rgba(0,0,0,.2);
+			box-shadow: 0 0 50px rgba(0,0,0,.8);
+		}
+	}
+}
