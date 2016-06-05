@@ -1,3 +1,20 @@
+// SPIGOT
+.spigot {
+	.fullscreen-screenshot {
+		padding-left: 100px;
+	    padding-right: 100px;
+		img {
+			max-width: 1170px;
+		}
+	}
+	@media (max-width: $screen-sm) {
+		.fullscreen-screenshot {
+			padding-left: 50px;
+		    padding-right: 50px;
+		}
+	}
+}
+
 // TAPIGO
 .tapigo {
 	.row.mobile-screenshots {
